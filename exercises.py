@@ -24,7 +24,8 @@ print(b)
 
 """
 Exercise 3
-Given an credit score score, assign a string value to another variable rating based on the following scale:
+Given an credit score score, assign a string value to another variable rating 
+based on the following scale:
 
 [0, 580) --> Poor
 [580, 670) --> Fair
@@ -32,13 +33,24 @@ Given an credit score score, assign a string value to another variable rating ba
 [740, 800) --> Very Good
 [800, 850] --> Excellent
 """
+score = 570
+if score >= 800:
+    rating = "Excellent"
+elif score >= 740:
+    rating = "Very Good"
+elif score >= 670:
+    rating = "Good"
+elif score >= 580:
+    rating = "Fair"
+else:
+    rating = "Poor"
 
-
-
+print(rating)
 
 """
 Exercise 4
-Given an elapsed time (in seconds), write code to set a variable magnitude based on the following conditions:
+Given an elapsed time (in seconds), write code to set a variable magnitude 
+based on the following conditions:
 
 if elapsed time is less than 1 minute, magnitude --> 'seconds'
 if elapsed time is more than 1 minute, but less than 1 hour, magnitude --> 'minutes'
