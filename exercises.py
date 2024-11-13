@@ -58,10 +58,19 @@ if elapsed time is more than 1 hour, but less than 1 day, magnitude --> 'hours'
 if elapsed time is more than 1 day, but less than 1 week: magnitude --> 'days'
 if elapsed time is more than 1 week, magnitude --> 'weeks'
 """
+time = 60*60*24*7+10
+if time < 60:
+    magnitude = 'seconds'
+elif time < 60*60:
+    magnitude = 'minutes'
+elif time < 60*60*24:
+    magnitude = 'hours'
+elif time < 60*60*24*7:
+    magnitude = 'days'
+else:
+    magnitude = 'weeks'
 
-
-
-
+print(magnitude)
 
 
 
