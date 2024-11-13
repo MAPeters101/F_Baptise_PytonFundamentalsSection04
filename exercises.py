@@ -6,16 +6,17 @@ a is None, and leave a unchanged otherwise. Use an if...else... statement.
 We need to create a variable a assign it some value, and then test the value
 of a to see if we need to change it to 'N/A':
 """
+a = None
+if a is None:
+    a = 'N/A'
 
-
+print(a)
 
 
 """
 Exercise 2
 Do the same thing as Question 1, but this time use a ternary operator.
 """
-
-
 
 """
 Exercise 3
