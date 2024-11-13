@@ -17,6 +17,10 @@ print(a)
 Exercise 2
 Do the same thing as Question 1, but this time use a ternary operator.
 """
+b = 100
+b = "N/A" if b is None else b
+print(b)
+
 
 """
 Exercise 3
